@@ -1,3 +1,4 @@
+import { VStack } from "@chakra-ui/react";
 import ContactForm from "../components/ContactForm";
 import ContactInfo from "../components/ContactInfo";
 import Footer from "../components/Footer";
@@ -11,15 +12,17 @@ import WhatWeDo from "../components/WhatWeDo";
 export default function HomePage() {
   return (
     <>
-      <Navbar selectedTag="/" />
-      <HeroSection />
-      <WhatWeDo />
-      <Partners />
-      <GetToKnowUs />
-      <Reviews />
-      <ContactForm />
-      <ContactInfo />
-      <Footer />
+      <VStack spacing="90px">
+        <Navbar selectedTag="/" />
+        <HeroSection />
+        <WhatWeDo />
+        <Partners />
+        <GetToKnowUs />
+        <Reviews />
+        <ContactForm />
+        <ContactInfo />
+        <Footer />
+      </VStack>
     </>
   );
 }

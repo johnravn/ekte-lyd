@@ -14,6 +14,7 @@
 }
 
 #root {
+  color-scheme: dark;
   margin: 0 auto;
   padding: 10px 0;
   text-align: center;
@@ -30,6 +31,7 @@
   color: var(--main-white);
   font-family: "Syne", sans-serif;
   animation: pulse 5s ease-in-out infinite alternate;
+  overflow: hidden scroll;
 }
 
 nav ul {
@@ -59,4 +61,10 @@ nav li:hover {
   nav ul {
     width: 100vw;
   }
+}
+
+.sectionHeader {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 42px;
+  line-height: 55px;
 }

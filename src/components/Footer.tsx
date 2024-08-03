@@ -1,7 +1,12 @@
+import { Center, Image } from "@chakra-ui/react";
+import logoWhite from "../assets/logo/logoWhite.svg";
+
 export default function Footer() {
   return (
     <>
-      <h1>Footer</h1>
+      <Center w={"100%"}>
+        <Image src={logoWhite} w={"360px"} alt="Ekte Lyd Logo"></Image>
+      </Center>
     </>
   );
 }
