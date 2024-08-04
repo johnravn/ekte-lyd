@@ -70,6 +70,12 @@ nav li:hover {
   font-size: 30px;
 }
 
+#videoLoop {
+  margin-top: -300px;
+  width: 100%;
+  position: relative;
+}
+
 @media only screen and (max-width: 640px) {
   nav ul {
     width: 100vw;
@@ -77,5 +83,12 @@ nav li:hover {
 
   .sectionHeader {
     font-size: 38px;
+  }
+
+  #videoLoop {
+    margin-top: -200px;
+    /* width: auto;
+    height: 900px;
+    overflow: hidden; */
   }
 }
