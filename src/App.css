@@ -57,14 +57,25 @@ nav li:hover {
   text-decoration: underline;
 }
 
+.sectionHeader {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 55px;
+}
+
+.paragraph {
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+}
+
 @media only screen and (max-width: 640px) {
   nav ul {
     width: 100vw;
   }
-}
 
-.sectionHeader {
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 42px;
-  line-height: 55px;
+  .sectionHeader {
+    font-size: 38px;
+  }
 }
