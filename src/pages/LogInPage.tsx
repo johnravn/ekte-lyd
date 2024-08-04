@@ -14,6 +14,9 @@ export default function LogInPage() {
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow(!show);
 
+  const [showError, setShowError] = React.useState(false);
+  const handleLogin = () => setShowError(true);
+
   return (
     <>
       <VStack spacing="90px">
@@ -30,12 +33,40 @@ export default function LogInPage() {
               placeholder="Skriv inn passord"
             />
             <InputRightElement width="4.5rem">
-              <Button h="1.75rem" size="sm" onClick={handleClick}>
+              <Button
+                h="1.75rem"
+                w="4rem"
+                size="sm"
+                bgColor={"#0a0a0a"}
+                color={"#f9f9f9"}
+                borderWidth={"1px"}
+                fontFamily={"'Roboto', sans-serif"}
+                fontWeight={500}
+                fontStyle={"normal"}
+                onClick={handleClick}
+              >
                 {show ? "Hide" : "Show"}
               </Button>
             </InputRightElement>
           </InputGroup>
-          <Button>LOGG INN</Button>
+          <Button
+            fontFamily={"'Roboto', sans-serif"}
+            fontWeight={500}
+            fontStyle={"normal"}
+            fontSize={"19px"}
+            bgColor={"#0a0a0a"}
+            color={"#f9f9f9"}
+            borderWidth={"2px"}
+            borderColor={"#f9f9f9"}
+            onClick={handleLogin}
+            h={"49px"}
+            w={"133px"}
+          >
+            LOGG INN
+          </Button>
+          <Text color={"red.300"} display={showError ? "inline" : "none"}>
+            Feil brukernavn eller passord
+          </Text>
         </VStack>
         <Footer />
       </VStack>

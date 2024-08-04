@@ -3,7 +3,6 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import LogInPage from "./pages/LogInPage";
-// import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
