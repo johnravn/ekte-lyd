@@ -20,13 +20,35 @@ export default function WhatWeDoPart({
         justify={"center"}
         align={"center"}
         p={"45px"}
+        w={"93%"}
       >
-        <VStack>
-          <Text>{title}</Text>
-          <Text>{underTitle}</Text>
-        </VStack>
-        <Spacer />
-        <Image src={image} />
+        {flip === 0 ? (
+          <>
+            <VStack spacing={"10px"} align={"start"}>
+              <Text fontSize={"50px"} fontWeight={"bold"} lineHeight={"70px"}>
+                {title}
+              </Text>
+              <Text fontSize={"22px"} lineHeight={"29px"}>
+                {underTitle}
+              </Text>
+            </VStack>
+            <Spacer />
+            <Image src={image} h={"367px"} />
+          </>
+        ) : (
+          <>
+            <Image src={image} h={"367px"} />
+            <Spacer />
+            <VStack spacing={"10px"} align={"end"}>
+              <Text fontSize={"50px"} fontWeight={"bold"} lineHeight={"70px"}>
+                {title}
+              </Text>
+              <Text fontSize={"22px"} lineHeight={"29px"}>
+                {underTitle}
+              </Text>
+            </VStack>
+          </>
+        )}
       </Wrap>
     </>
   );
