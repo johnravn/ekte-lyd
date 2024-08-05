@@ -4,6 +4,15 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 
 export default function GetToKnowUs() {
+  const handleScrollToTop = () => {
+    const rootDiv = document.getElementById("root");
+    if (rootDiv) {
+      rootDiv.scrollTo({
+        top: 0,
+      });
+    }
+  };
+
   return (
     <>
       <VStack spacing={"50px"} maxW={"600px"}>
@@ -29,6 +38,7 @@ export default function GetToKnowUs() {
             fontWeight={"normal"}
             bgColor={"#234E70"}
             color={"#f9f9f9"}
+            onClick={handleScrollToTop}
           >
             Les mer
           </Button>
