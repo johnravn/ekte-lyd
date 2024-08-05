@@ -9,7 +9,7 @@
     background-size: 100%;
   }
   100% {
-    background-size: 120%;
+    background-size: 130%;
   }
 }
 
@@ -20,17 +20,17 @@
   text-align: center;
   height: 100vh;
   background-image: radial-gradient(
-      circle at 160% 0%,
+      circle at 140% 0%,
       var(--main-color) 0%,
       transparent 49%
     ),
-    radial-gradient(circle at -60% 110%, var(--main-color) 0%, transparent 49%);
+    radial-gradient(circle at -40% 110%, var(--main-color) 0%, transparent 49%);
   background-attachment: fixed;
   background-position: center;
   background-color: var(--main-black);
   color: var(--main-white);
   font-family: "Syne", sans-serif;
-  animation: pulse 5s ease-in-out infinite alternate;
+  animation: pulse 4s ease-in-out infinite alternate;
   overflow: hidden scroll;
 }
 
@@ -61,13 +61,28 @@ nav li:hover {
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 42px;
-  line-height: 55px;
+  font-size: 41px;
+  line-height: 54px;
+}
+
+.sectionH2 {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 25px;
+}
+.sectionH3 {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .paragraph {
-  font-family: "Syne", sans-serif;
-  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
 }
 
 #videoLoop {
@@ -76,7 +91,29 @@ nav li:hover {
   position: relative;
 }
 
+.valueCard {
+  transition: 200ms;
+}
+.valueCard:hover {
+  scale: 1.01;
+  background-color: #181818;
+  filter: drop-shadow(0 0 0.2rem #12293a);
+}
+
 @media only screen and (max-width: 640px) {
+  #root {
+    background-image: radial-gradient(
+        circle at 160% 0%,
+        var(--main-color) 0%,
+        transparent 49%
+      ),
+      radial-gradient(
+        circle at -60% 110%,
+        var(--main-color) 0%,
+        transparent 49%
+      );
+  }
+
   nav ul {
     width: 100vw;
   }

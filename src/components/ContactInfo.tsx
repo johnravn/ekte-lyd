@@ -11,12 +11,12 @@ export default function ContactInfo() {
       <VStack spacing={"37px"}>
         <Text className="sectionHeader">Kontakt</Text>
         <HStack spacing={"20px"}>
-          <Image src={phoneIcon} h={"55px"} />
+          <Image src={phoneIcon} h={"47px"} />
           <Link
             fontFamily={"'IBM Plex Mono', sans-serif"}
             fontWeight={500}
             fontStyle={"normal"}
-            fontSize={"30px"}
+            fontSize={"24px"}
             href={"tel:004795721220"}
             target="_blank"
           >
@@ -24,12 +24,12 @@ export default function ContactInfo() {
           </Link>
         </HStack>
         <HStack spacing={"20px"}>
-          <Image src={emailIcon} h={"40px"} />
+          <Image src={emailIcon} h={"35px"} />
           <Link
             fontFamily={"'IBM Plex Mono', sans-serif"}
             fontWeight={500}
             fontStyle={"normal"}
-            fontSize={"30px"}
+            fontSize={"24px"}
             href={"mailto:post@ektelyd.no"}
             target="_blank"
           >
@@ -37,12 +37,12 @@ export default function ContactInfo() {
           </Link>
         </HStack>
         <HStack spacing={"20px"}>
-          <Image src={houseIcon} h={"42px"} />
+          <Image src={houseIcon} h={"37px"} />
           <Link
             fontFamily={"'IBM Plex Mono', sans-serif"}
             fontWeight={500}
             fontStyle={"normal"}
-            fontSize={"30px"}
+            fontSize={"24px"}
             href={"https://g.co/kgs/oG6jwia"}
             target="_blank"
           >
@@ -50,12 +50,12 @@ export default function ContactInfo() {
           </Link>
         </HStack>
         <HStack spacing={"20px"}>
-          <Image src={numberIcon} h={"40px"} />
+          <Image src={numberIcon} h={"35px"} />
           <Link
             fontFamily={"'IBM Plex Mono', sans-serif"}
             fontWeight={500}
             fontStyle={"normal"}
-            fontSize={"30px"}
+            fontSize={"24px"}
             href="https://www.proff.no/selskap/ekte-lyd-as/oslo/underholdning-og-arrang%C3%B8rtjenester/IFF3AE907QQ"
             target="_blank"
           >

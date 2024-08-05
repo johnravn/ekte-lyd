@@ -61,6 +61,11 @@ export default function LogInPage() {
             onClick={handleLogin}
             h={"49px"}
             w={"133px"}
+            sx={{
+              _hover: {
+                bg: "#303030",
+              },
+            }}
           >
             LOGG INN
           </Button>
