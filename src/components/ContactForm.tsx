@@ -16,14 +16,14 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import { useRef } from "react";
+import { FormEventHandler, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
   const toast = useToast();
 
-  const sendEmail = (e) => {
+  const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     toast({
       title: "Sender forespørsel",
@@ -37,7 +37,7 @@ export default function ContactForm() {
       .sendForm(
         "service_embs1nr",
         "template_miqk6cq",
-        form.current,
+        form.current!,
         "Xr1SjHXSisuHYDtwg"
       )
       .then(
@@ -64,6 +64,8 @@ export default function ContactForm() {
           });
         }
       );
+
+    // @ts-ignore Target inneholder ikke reset typer: bør fikses!
     e.target.reset();
   };
 
@@ -72,7 +74,7 @@ export default function ContactForm() {
       <VStack spacing={"20px"}>
         <Text className="sectionHeader">Send oss en forespørsel</Text>
         <Text className="sectionH2">Helt uforplikende!</Text>
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={handleSubmit}>
           <VStack spacing={5} w={{ base: "93vw", sm: "330px" }}>
             <FormControl isRequired>
               <InputGroup>
