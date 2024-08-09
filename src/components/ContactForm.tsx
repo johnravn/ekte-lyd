@@ -38,7 +38,7 @@ export default function ContactForm() {
         "service_embs1nr",
         "template_miqk6cq",
         form.current!,
-        "Xr1SjHXSisuHYDtwg"
+        "Xr1SjHXSisuHYDtwg",
       )
       .then(
         (result) => {
@@ -62,7 +62,7 @@ export default function ContactForm() {
             duration: 8000,
             isClosable: true,
           });
-        }
+        },
       );
 
     // @ts-ignore Target inneholder ikke reset typer: bør fikses!
