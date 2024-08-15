@@ -25,7 +25,7 @@ export default function LogInPage() {
           <Text as={"h1"} className="sectionHeader">
             Logg inn
           </Text>
-          <Input w={"320px"} placeholder="E-post"></Input>
+          <Input w={{ base: "94vw", sm: "320px" }} placeholder="E-post"></Input>
           <InputGroup size="md">
             <Input
               pr="4.5rem"

@@ -26,7 +26,7 @@ export default function Values() {
     <>
       <VStack spacing={"37px"}>
         <Text className="sectionHeader"> Våre Verdier</Text>
-        <Wrap spacing={"37px"} justify={"center"}>
+        <Wrap spacing={"37px"} justify={"center"} p={"0 12px"}>
           {valuesData.map((value) => (
             <ValueCard title={value.title} text={value.text} />
           ))}

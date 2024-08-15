@@ -11,7 +11,7 @@ export default function ValueCard({ title, text }: Props) {
       <VStack
         spacing={"25px"}
         p={"15px"}
-        w={"400px"}
+        w={{ base: "94vw", sm: "400px" }}
         bgColor={"#171717"}
         borderRadius={"20px"}
         className="valueCard"
