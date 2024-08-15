@@ -23,7 +23,7 @@ export default function Presentation({ name, phone, mail, image }: Props) {
   const altText: string = "Portrettbilde av " + name;
   const telLink: string = "tel:" + phone;
   const mailLink: string = "mailto:" + mail;
-  const responsiveFontSize = { base: "22px", sm: "30px" };
+  const responsiveFontSize = { base: "22px", sm: "26px" };
 
   return (
     <>
