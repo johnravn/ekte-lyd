@@ -8,6 +8,7 @@ import ContactInfo from "../components/ContactInfo";
 import havardPortrait from "../assets/images/UseThisHavard-bakgrunn fjernet.png";
 import johnPortrait from "../assets/images/UseThisJohn-bakgrunn fjernet.png";
 import Paragraph from "../components/Paragraph";
+import Film from "../components/Film";
 
 export default function AboutUsPage() {
   return (
@@ -44,6 +45,7 @@ export default function AboutUsPage() {
           elit sed risus."
         />
         <Values />
+        <Film />
         <ContactInfo />
         <Footer />
       </VStack>

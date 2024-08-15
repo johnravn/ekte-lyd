@@ -101,6 +101,11 @@ nav li:hover {
   filter: drop-shadow(0 0 0.2rem #12293a);
 }
 
+#promofilm {
+  width: 560px;
+  height: 315px;
+}
+
 @media only screen and (max-width: 640px) {
   #root {
     background-image: radial-gradient(
@@ -130,5 +135,9 @@ nav li:hover {
   .sectionH3 {
     font-size: 26px;
     line-height: 26px;
+  }
+
+  #promofilm {
+    width: 94vw;
   }
 }
