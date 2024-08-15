@@ -6,15 +6,19 @@ import poster from "../assets/images/videoPoster.jpeg";
 export default function HeroSection() {
   return (
     <>
-      <Center w={"100%"}>
-        <Image src={logoOnBlack} w={"360px"} alt="Ekte Lyd Logo"></Image>
+      <Center w={"100%"} p={"0 12px"}>
+        <Image
+          src={logoOnBlack}
+          w={"360px"}
+          // margin={"0 20px"}
+          alt="Ekte Lyd Logo"
+        />
       </Center>
       <Box
         w={"1520px"}
         h={{ base: "550px", lg: "450px" }}
         overflow={"hidden"}
         display={"block"}
-        // bgColor={"#aa2222"}
       >
         <video autoPlay loop muted playsInline id="videoLoop" poster={poster}>
           <source src={videoLoop} type="video/mp4" />

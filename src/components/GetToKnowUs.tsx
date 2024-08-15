@@ -16,14 +16,15 @@ export default function GetToKnowUs() {
   return (
     <>
       <VStack spacing={"50px"} maxW={"600px"}>
-        <Center w={"100%"}>
-          <Image src={logoOnBlack} w={"360px"} alt="Ekte Lyd Logo"></Image>
+        <Center w={"100%"} p={"0 12px"}>
+          <Image src={logoOnBlack} w={"360px"} alt="Ekte Lyd Logo" />
         </Center>
         <Text
           fontFamily={'"Anonymous Pro", monospace'}
           fontSize={"28px"}
           lineHeight={"28px"}
           fontWeight={"bold"}
+          p={"0 8px"}
         >
           Hvem er ekte lyd? Hvorfor ble det til? Finn ut mer om oss!
         </Text>

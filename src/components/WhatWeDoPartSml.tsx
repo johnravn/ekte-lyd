@@ -13,13 +13,19 @@ export default function WhatWeDoPartSml({
   imageSml,
   flip,
 }: Props) {
+  const responsiveFontSize = { base: "40px", sm: "45px" };
+
   return (
     <>
       <VStack w={"100%"} overflow={"hidden"}>
         {flip === 0 ? (
           <>
             <VStack spacing={"10px"} align={"start"} p={"10px"}>
-              <Text fontSize={"50px"} fontWeight={"bold"} lineHeight={"70px"}>
+              <Text
+                fontSize={responsiveFontSize}
+                fontWeight={"bold"}
+                lineHeight={"70px"}
+              >
                 {title}
               </Text>
               <Text fontSize={"22px"} lineHeight={"29px"} align={"start"}>
@@ -30,7 +36,11 @@ export default function WhatWeDoPartSml({
         ) : (
           <>
             <VStack spacing={"10px"} align={"end"} p={"10px"}>
-              <Text fontSize={"50px"} fontWeight={"bold"} lineHeight={"70px"}>
+              <Text
+                fontSize={responsiveFontSize}
+                fontWeight={"bold"}
+                lineHeight={"70px"}
+              >
                 {title}
               </Text>
               <Text fontSize={"22px"} lineHeight={"29px"} align={"end"}>
