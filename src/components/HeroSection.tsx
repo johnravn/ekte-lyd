@@ -16,7 +16,7 @@ export default function HeroSection() {
         display={"block"}
         // bgColor={"#aa2222"}
       >
-        <video autoPlay loop muted id="videoLoop" poster={poster}>
+        <video autoPlay loop muted playsInline id="videoLoop" poster={poster}>
           <source src={videoLoop} type="video/mp4" />
         </video>
       </Box>

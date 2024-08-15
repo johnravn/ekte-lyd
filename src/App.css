@@ -89,6 +89,7 @@ nav li:hover {
   margin-top: -300px;
   width: 100%;
   position: relative;
+  pointer-events: none;
 }
 
 .valueCard {
