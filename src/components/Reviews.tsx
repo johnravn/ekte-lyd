@@ -1,6 +1,7 @@
 import { Box, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import ReviewProfile from "./ReviewProfile";
 import haraldPortrett from "../assets/images/haraldPortrett.jpeg";
+import oleFredrikPortrett from "../assets/images/oleFredrikPortrett.jpeg";
 import quoteIcon from "../assets/images/quoteIcon.svg";
 import { useWindowSize } from "@uidotdev/usehooks";
 
@@ -23,6 +24,13 @@ export default function Reviews() {
       image: haraldPortrett,
       text: "Applaus! film&tv leverer streaming- og eventtjenester og har valgt Ekte Lyd as som en fast og fortrukket leverandør av lydteknikk. Medarbeiderne i Ekte Lyd er alltid klar til å yte det lille ekstra når det koker på et arrangement, de er strukturerte, pålitelige og er dyktige fagfolk. Kort fortalt er det en stor trygghet å vite at de skal være med på jobb!",
     },
+    {
+      name: "Ole Fredrik Norbye",
+      title: "Programansvarlig Master i utøvende musikk",
+      company: "NLA Høgskolen",
+      image: oleFredrikPortrett,
+      text: "Ekte lyd har levert lyd til både eksamener og  annen undervisning hos oss. De er alltid godt forberedt, alltid i godt humør og lyden låter nydelig! I tillegg er de svært fleksible og løsningsorienterte på endringer som måtte oppstå på kort varsel. Med Ekte Lyd som teknisk ansvarlige har vi alltid lave skuldre og jeg kan gi dem mine beste anbefalinger.",
+    },
   ];
 
   if (size.width != null) {
@@ -38,15 +46,32 @@ export default function Reviews() {
             />
             <HStack spacing={"42px"} align={"start"}>
               <Text
-                fontFamily={"'IBM Plex Mono', monospace"}
-                fontSize={"23px"}
-                fontWeight={"500"}
+                fontFamily={"'Roboto', monospace"}
+                fontSize={"26px"}
                 align={"left"}
               >
                 {reviewData[0].text}
               </Text>
               <Image src={quoteIcon} />
             </HStack>
+          </HStack>
+          <HStack spacing={"42px"}>
+            <HStack spacing={"42px"} align={"start"}>
+              <Image src={quoteIcon} />
+              <Text
+                fontFamily={"'Roboto', sans-serif"}
+                fontSize={"26px"}
+                align={"left"}
+              >
+                {reviewData[1].text}
+              </Text>
+            </HStack>
+            <ReviewProfile
+              name={reviewData[1].name}
+              title={reviewData[1].title}
+              company={reviewData[1].company}
+              image={reviewData[1].image}
+            />
           </HStack>
         </VStack>
       );
@@ -57,7 +82,7 @@ export default function Reviews() {
             <Image src={quoteIcon} marginEnd={"20px"} />
           </Box>
           <Text
-            fontFamily={"'IBM Plex Mono', monospace"}
+            fontFamily={"'Roboto', sans-serif"}
             fontSize={"23px"}
             fontWeight={"500"}
             align={"left"}
