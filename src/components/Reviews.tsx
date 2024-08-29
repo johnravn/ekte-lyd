@@ -77,24 +77,45 @@ export default function Reviews() {
       );
     } else {
       return (
-        <VStack spacing={"41px"} w="95vw">
-          <Box w={"100%"} display={"inline-flex"} justifyContent={"flex-end"}>
-            <Image src={quoteIcon} marginEnd={"20px"} />
-          </Box>
-          <Text
-            fontFamily={"'Roboto', sans-serif"}
-            fontSize={"23px"}
-            fontWeight={"500"}
-            align={"left"}
-          >
-            {reviewData[0].text}
-          </Text>
-          <ReviewProfile
-            name={reviewData[0].name}
-            title={reviewData[0].title}
-            company={reviewData[0].company}
-            image={reviewData[0].image}
-          />{" "}
+        <VStack spacing={"60px"}>
+          <VStack spacing={"41px"} w="95vw">
+            <Box w={"100%"} display={"inline-flex"} justifyContent={"flex-end"}>
+              <Image src={quoteIcon} marginEnd={"20px"} />
+            </Box>
+            <Text
+              fontFamily={"'Roboto', sans-serif"}
+              fontSize={"23px"}
+              fontWeight={"500"}
+              align={"left"}
+            >
+              {reviewData[0].text}
+            </Text>
+            <ReviewProfile
+              name={reviewData[0].name}
+              title={reviewData[0].title}
+              company={reviewData[0].company}
+              image={reviewData[0].image}
+            />{" "}
+          </VStack>
+          <VStack spacing={"41px"} w="95vw">
+            <Box w={"100%"} display={"inline-flex"} justifyContent={"flex-end"}>
+              <Image src={quoteIcon} marginEnd={"20px"} />
+            </Box>
+            <Text
+              fontFamily={"'Roboto', sans-serif"}
+              fontSize={"23px"}
+              fontWeight={"500"}
+              align={"left"}
+            >
+              {reviewData[1].text}
+            </Text>
+            <ReviewProfile
+              name={reviewData[1].name}
+              title={reviewData[1].title}
+              company={reviewData[1].company}
+              image={reviewData[1].image}
+            />{" "}
+          </VStack>
         </VStack>
       );
     }
