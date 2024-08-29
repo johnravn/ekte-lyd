@@ -12,7 +12,7 @@ import WhatWeDo from "../components/WhatWeDo";
 export default function HomePage() {
   return (
     <>
-      <VStack spacing="90px">
+      <VStack spacing="90px" className="pageContainer">
         <Navbar selectedTag="/" />
         <HeroSection />
         <WhatWeDo />

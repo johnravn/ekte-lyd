@@ -16,21 +16,21 @@
 #root {
   color-scheme: dark;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 0;
   text-align: center;
   height: 100vh;
   background-image: radial-gradient(
-      circle at 140% 0%,
+      circle at 165% 0%,
       var(--main-color) 0%,
       transparent 49%
     ),
-    radial-gradient(circle at -40% 110%, var(--main-color) 0%, transparent 49%);
+    radial-gradient(circle at -65% 110%, var(--main-color) 0%, transparent 49%);
   background-attachment: fixed;
   background-position: center;
   background-color: var(--main-black);
   color: var(--main-white);
   font-family: "Syne", sans-serif;
-  animation: pulse 4s ease-in-out infinite alternate;
+  animation: pulse 7s ease-in-out infinite alternate;
   overflow: hidden scroll;
 }
 
@@ -104,6 +104,21 @@ nav li:hover {
 #promofilm {
   width: 560px;
   height: 315px;
+}
+
+.pageContainer {
+  max-width: 1800px;
+  padding: 10px 0;
+  margin: 0 auto;
+  background-image: radial-gradient(
+      circle at 140% 0%,
+      var(--main-color) 0%,
+      transparent 49%
+    ),
+    radial-gradient(circle at -40% 110%, var(--main-color) 0%, transparent 49%);
+  background-attachment: fixed;
+  background-position: center;
+  background-color: var(--main-black);
 }
 
 @media only screen and (max-width: 640px) {

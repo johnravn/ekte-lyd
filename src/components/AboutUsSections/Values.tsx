@@ -10,7 +10,7 @@ export default function Values() {
   const valuesData: ValuesData[] = [
     {
       title: "Kvalitet",
-      text: "Vi setter høyre krav til kvaliteteten på det vi leverer. Dette gjør vi for å sikre kvaliteten på det vi leverer.",
+      text: "Vi setter høye krav til kvaliteteten på det vi leverer. Dette gjør vi for å sikre kvaliteten på det vi leverer.",
     },
     {
       title: "Integritet",

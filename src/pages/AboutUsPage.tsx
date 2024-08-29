@@ -13,7 +13,7 @@ import Film from "../components/Film";
 export default function AboutUsPage() {
   return (
     <>
-      <VStack spacing="90px">
+      <VStack spacing="90px" className="pageContainer">
         <Navbar selectedTag="/OmOss" />
         <Paragraph
           title="Hvem er ekte lyd?"
