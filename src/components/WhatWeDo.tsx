@@ -47,7 +47,12 @@ export default function WhatWeDo() {
 
   return (
     <>
-      <VStack spacing={"55px"} w={"100%"} justifyContent={"center"}>
+      <VStack
+        spacing={"55px"}
+        w={"100%"}
+        maxW={"1600px"}
+        justifyContent={"center"}
+      >
         {wwwData.map((section) => {
           if (size.width != null) {
             if (size.width > 600) {
