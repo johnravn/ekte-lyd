@@ -19,7 +19,7 @@ export default function LogInPage() {
 
   return (
     <>
-      <VStack spacing="90px" className="pageContainer">
+      <VStack spacing="90px" className="pageContainer" h={"100vh"}>
         <Navbar selectedTag="/LoggInn" />
         <VStack spacing="30px">
           <Text as={"h1"} className="sectionHeader">

@@ -25,6 +25,7 @@ export default function WhatWeDoPartSml({
                 fontSize={responsiveFontSize}
                 fontWeight={"bold"}
                 lineHeight={"70px"}
+                as={"h3"}
               >
                 {title}
               </Text>
@@ -40,6 +41,7 @@ export default function WhatWeDoPartSml({
                 fontSize={responsiveFontSize}
                 fontWeight={"bold"}
                 lineHeight={"70px"}
+                as={"h3"}
               >
                 {title}
               </Text>

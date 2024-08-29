@@ -9,7 +9,7 @@ export default function Paragraph({ title, text }: Props) {
   return (
     <>
       <VStack spacing={"37px"}>
-        <Text className="sectionHeader" w={"100%"}>
+        <Text className="sectionHeader" w={"100%"} as={"h1"}>
           {title}
         </Text>
         <Text className="paragraph" w={{ base: "92vw", xl: "1000px" }}>

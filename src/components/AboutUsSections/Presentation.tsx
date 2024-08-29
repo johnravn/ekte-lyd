@@ -35,7 +35,9 @@ export default function Presentation({ name, phone, mail, image }: Props) {
       >
         <Center w={{ base: "97vw", lg: "auto" }}>
           <VStack spacing={"56px"}>
-            <Text className="sectionHeader">{name}</Text>
+            <Text className="sectionHeader" as={"h3"}>
+              {name}
+            </Text>
             <VStack spacing={"30px"}>
               <HStack spacing={"20px"}>
                 <Image src={phoneIcon} h={{ base: "45px", sm: "55px" }} />

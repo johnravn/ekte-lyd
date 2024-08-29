@@ -9,7 +9,9 @@ export default function ContactInfo() {
   return (
     <>
       <VStack spacing={"37px"} p={"0 12px"}>
-        <Text className="sectionHeader">Kontakt</Text>
+        <Text className="sectionHeader" as={"h2"}>
+          Kontakt
+        </Text>
         <HStack spacing={"20px"}>
           <Image src={phoneIcon} h={"47px"} />
           <Link

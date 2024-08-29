@@ -25,7 +25,12 @@ export default function WhatWeDoPart({
         {flip === 0 ? (
           <>
             <VStack spacing={"10px"} align={"start"}>
-              <Text fontSize={"50px"} fontWeight={"bold"} lineHeight={"70px"}>
+              <Text
+                fontSize={"50px"}
+                fontWeight={"bold"}
+                lineHeight={"70px"}
+                as={"h3"}
+              >
                 {title}
               </Text>
               <Text fontSize={"22px"} lineHeight={"29px"}>
@@ -40,7 +45,12 @@ export default function WhatWeDoPart({
             <Image src={image} h={"367px"} />
             <Spacer />
             <VStack spacing={"10px"} align={"end"}>
-              <Text fontSize={"50px"} fontWeight={"bold"} lineHeight={"70px"}>
+              <Text
+                fontSize={"50px"}
+                fontWeight={"bold"}
+                lineHeight={"70px"}
+                as={"h3"}
+              >
                 {title}
               </Text>
               <Text fontSize={"22px"} lineHeight={"29px"}>

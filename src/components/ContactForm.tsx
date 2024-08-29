@@ -72,7 +72,9 @@ export default function ContactForm() {
   return (
     <>
       <VStack spacing={"20px"}>
-        <Text className="sectionHeader">Send oss en forespørsel</Text>
+        <Text className="sectionHeader" as={"h2"}>
+          Send oss en forespørsel
+        </Text>
         <Text className="sectionH2">Helt uforplikende!</Text>
         <form ref={form} onSubmit={handleSubmit}>
           <VStack spacing={5} w={{ base: "93vw", sm: "330px" }}>

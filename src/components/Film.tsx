@@ -4,7 +4,9 @@ export default function Film() {
   return (
     <>
       <VStack spacing={"40px"}>
-        <Text className="sectionHeader">Promofilm</Text>
+        <Text className="sectionHeader" as={"h2"}>
+          Promofilm
+        </Text>
         <iframe
           id="promofilm"
           src="https://www.youtube.com/embed/p6uXrz0SUw4?si=AlSvXN1OFyXDV6Z6"
