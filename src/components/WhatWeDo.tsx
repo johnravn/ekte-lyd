@@ -38,7 +38,7 @@ export default function WhatWeDo() {
     },
     {
       title: "Mannskap",
-      underTitle: "Vi har flinke teknikere som jobber for å oppnå dine drømmer",
+      underTitle: "Vi har dyktige teknikere som kan fagfeltet sitt",
       image: personelImage,
       imageSml: personelImageSml,
       flip: 0,

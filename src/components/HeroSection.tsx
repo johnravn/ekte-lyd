@@ -15,8 +15,8 @@ export default function HeroSection() {
         />
       </Center>
       <Box
-        w={"1520px"}
-        h={{ base: "50vh", lg: "450px" }}
+        w={{ base: "100vw", "2xl": "1600px" }}
+        h={{ base: "200px", sm: "300px", xl: "450px" }}
         overflow={"hidden"}
         display={"block"}
       >

@@ -10,15 +10,15 @@ export default function Values() {
   const valuesData: ValuesData[] = [
     {
       title: "Kvalitet",
-      text: "Vi setter høye krav til kvaliteteten på det vi leverer. Dette gjør vi for å sikre kvaliteten på det vi leverer.",
+      text: "Vi setter høye krav til kvaliteten på det vi leverer for å sikre profesjonalitet.",
     },
     {
       title: "Integritet",
-      text: "For oss er det avgjørende at integritet gjennomsyrer alt vi gjør. Alle folkene vi jobber med er skikkelige folk man kan stole på.",
+      text: "For oss er det avgjørende å ha høy integritet i det vi gjør. Alle våre medarbeidere er oppriktige folk med kundens behov i fokus.",
     },
     {
       title: "Fleksibilitet",
-      text: "Alle arrangementer har forskjellige behov. Vi legger til rette for det ditt arrangement trenger.",
+      text: "Ulike arrangementer har ulike tekniske behov. Vi strekker oss langt for å sammen oppnå kundens drøm og visjon for arrangementet.",
     },
   ];
 

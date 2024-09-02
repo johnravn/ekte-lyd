@@ -26,7 +26,7 @@ export default function GetToKnowUs() {
           fontWeight={"bold"}
           p={"0 8px"}
         >
-          Hvem er ekte lyd? Hvorfor ble det til? Finn ut mer om oss!
+          Hvem er vi? Hvordan ble vi til? Les mer om oss her!
         </Text>
         <Link to="/OmOss">
           <Button

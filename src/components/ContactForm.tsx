@@ -75,7 +75,7 @@ export default function ContactForm() {
         <Text className="sectionHeader" as={"h2"}>
           Send oss en forespørsel
         </Text>
-        <Text className="sectionH2">Helt uforplikende!</Text>
+        <Text className="sectionH2">Helt uforpliktende!</Text>
         <form ref={form} onSubmit={handleSubmit}>
           <VStack spacing={5} w={{ base: "93vw", sm: "330px" }}>
             <FormControl isRequired>

@@ -22,14 +22,14 @@ export default function Reviews() {
       title: "Daglig leder",
       company: "Applaus! film&tv",
       image: haraldPortrett,
-      text: "Applaus! film&tv leverer streaming- og eventtjenester og har valgt Ekte Lyd as som en fast og fortrukket leverandør av lydteknikk. Medarbeiderne i Ekte Lyd er alltid klar til å yte det lille ekstra når det koker på et arrangement, de er strukturerte, pålitelige og er dyktige fagfolk. Kort fortalt er det en stor trygghet å vite at de skal være med på jobb!",
+      text: "Applaus! film&tv leverer streaming- og eventtjenester og har valgt Ekte Lyd som en fast og foretrukket leverandør av lydteknikk. Medarbeiderne i Ekte Lyd er alltid klar til å yte det lille ekstra når det koker på et arrangement, de er strukturerte, pålitelige og er dyktige fagfolk. Kort fortalt er det en stor trygghet å vite at de skal være med på jobb!",
     },
     {
       name: "Ole Fredrik Norbye",
       title: "Programansvarlig Master i utøvende musikk",
       company: "NLA Høgskolen",
       image: oleFredrikPortrett,
-      text: "Ekte lyd har levert lyd til både eksamener og  annen undervisning hos oss. De er alltid godt forberedt, alltid i godt humør og lyden låter nydelig! I tillegg er de svært fleksible og løsningsorienterte på endringer som måtte oppstå på kort varsel. Med Ekte Lyd som teknisk ansvarlige har vi alltid lave skuldre og jeg kan gi dem mine beste anbefalinger.",
+      text: "Ekte Lyd har levert lyd til både eksamener og  annen undervisning hos oss. De er alltid godt forberedt, alltid i godt humør og lyden låter nydelig! I tillegg er de svært fleksible og løsningsorienterte på endringer som måtte oppstå på kort varsel. Med Ekte Lyd som teknisk ansvarlige har vi alltid lave skuldre og jeg kan gi dem mine beste anbefalinger.",
     },
   ];
 
@@ -77,10 +77,14 @@ export default function Reviews() {
       );
     } else {
       return (
-        <VStack spacing={"60px"}>
-          <VStack spacing={"41px"} w="95vw">
-            <Box w={"100%"} display={"inline-flex"} justifyContent={"flex-end"}>
-              <Image src={quoteIcon} marginEnd={"20px"} />
+        <VStack spacing={"90px"}>
+          <VStack spacing={"41px"} w="87vw">
+            <Box
+              w={"100%"}
+              display={"inline-flex"}
+              justifyContent={"flex-start"}
+            >
+              <Image src={quoteIcon} />
             </Box>
             <Text
               fontFamily={"'Roboto', sans-serif"}
@@ -97,9 +101,9 @@ export default function Reviews() {
               image={reviewData[0].image}
             />{" "}
           </VStack>
-          <VStack spacing={"41px"} w="95vw">
+          <VStack spacing={"41px"} w="87vw">
             <Box w={"100%"} display={"inline-flex"} justifyContent={"flex-end"}>
-              <Image src={quoteIcon} marginEnd={"20px"} />
+              <Image src={quoteIcon} />
             </Box>
             <Text
               fontFamily={"'Roboto', sans-serif"}

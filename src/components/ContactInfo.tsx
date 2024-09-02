@@ -18,7 +18,7 @@ export default function ContactInfo() {
             fontFamily={"'IBM Plex Mono', sans-serif"}
             fontWeight={500}
             fontStyle={"normal"}
-            fontSize={"24px"}
+            fontSize={"23px"}
             href={"tel:004795721220"}
             target="_blank"
           >
@@ -31,7 +31,7 @@ export default function ContactInfo() {
             fontFamily={"'IBM Plex Mono', sans-serif"}
             fontWeight={500}
             fontStyle={"normal"}
-            fontSize={"24px"}
+            fontSize={"23px"}
             href={"mailto:post@ektelyd.no"}
             target="_blank"
           >
@@ -44,7 +44,7 @@ export default function ContactInfo() {
             fontFamily={"'IBM Plex Mono', sans-serif"}
             fontWeight={500}
             fontStyle={"normal"}
-            fontSize={"24px"}
+            fontSize={"23px"}
             href={"https://g.co/kgs/oG6jwia"}
             target="_blank"
           >
@@ -57,7 +57,7 @@ export default function ContactInfo() {
             fontFamily={"'IBM Plex Mono', sans-serif"}
             fontWeight={500}
             fontStyle={"normal"}
-            fontSize={"24px"}
+            fontSize={"23px"}
             href="https://www.proff.no/selskap/ekte-lyd-as/oslo/underholdning-og-arrang%C3%B8rtjenester/IFF3AE907QQ"
             target="_blank"
           >
