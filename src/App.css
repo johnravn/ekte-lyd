@@ -13,7 +13,7 @@
   }
 }
 
-#root {
+/* #root {
   color-scheme: dark;
   margin: 0 auto;
   padding: 0;
@@ -32,6 +32,35 @@
   font-family: "Syne", sans-serif;
   animation: pulse 7s ease-in-out infinite alternate;
   overflow: scroll;
+} */
+
+#root {
+  color-scheme: dark;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh; /* Use min-height instead of height */
+  display: flex;
+  flex-direction: column;
+  background-image: radial-gradient(
+      circle at 165% 0%,
+      var(--main-color) 0%,
+      transparent 49%
+    ),
+    radial-gradient(circle at -65% 110%, var(--main-color) 0%, transparent 49%);
+  background-attachment: fixed;
+  background-position: center;
+  background-color: var(--main-black);
+  color: var(--main-white);
+  font-family: "Syne", sans-serif;
+  animation: pulse 7s ease-in-out infinite alternate;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 nav ul {
