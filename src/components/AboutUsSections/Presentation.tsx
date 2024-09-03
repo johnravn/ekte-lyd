@@ -32,6 +32,9 @@ export default function Presentation({ name, phone, mail, image }: Props) {
         flexFlow={"row-wrap"}
         align={"center"}
         justify={"center"}
+        p={"40px"}
+        backgroundColor={"rgba(0,0,0,.2)"}
+        borderRadius={"40px"}
       >
         <Center w={{ base: "97vw", lg: "auto" }}>
           <VStack spacing={"56px"}>
