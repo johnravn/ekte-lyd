@@ -17,10 +17,10 @@ export default function WhatWeDoPartSml({
 
   return (
     <>
-      <VStack w={"100%"} overflow={"hidden"}>
+      <VStack w={"auto"} overflow={"hidden"}>
         {flip === 0 ? (
           <>
-            <VStack spacing={"10px"} align={"start"} p={"10px"}>
+            <VStack spacing={"10px"} align={"start"} p={"20px"} w={"100%"}>
               <Text
                 fontSize={responsiveFontSize}
                 fontWeight={"bold"}
@@ -36,7 +36,7 @@ export default function WhatWeDoPartSml({
           </>
         ) : (
           <>
-            <VStack spacing={"10px"} align={"end"} p={"10px"}>
+            <VStack spacing={"10px"} align={"end"} p={"20px"} w={"100%"}>
               <Text
                 fontSize={responsiveFontSize}
                 fontWeight={"bold"}
