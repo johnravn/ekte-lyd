@@ -34,7 +34,7 @@ export default function Reviews() {
   ];
 
   if (size.width != null) {
-    if (size.width > 600) {
+    if (size.width > 1100) {
       return (
         <VStack spacing={"66px"} w={"1050px"}>
           <HStack spacing={"42px"}>

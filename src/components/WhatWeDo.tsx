@@ -55,7 +55,7 @@ export default function WhatWeDo() {
       >
         {wwwData.map((section) => {
           if (size.width != null) {
-            if (size.width > 600) {
+            if (size.width > 1300) {
               return (
                 <WhatWeDoPart
                   title={section.title}
