@@ -31,7 +31,7 @@
   color: var(--main-white);
   font-family: "Syne", sans-serif;
   animation: pulse 7s ease-in-out infinite alternate;
-  overflow: hidden scroll;
+  overflow: scroll;
 }
 
 nav ul {
@@ -119,6 +119,7 @@ nav li:hover {
   background-attachment: fixed;
   background-position: center;
   background-color: var(--main-black);
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1040px) {
