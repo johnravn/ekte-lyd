@@ -33,7 +33,7 @@ export default function Presentation({ name, phone, mail, image }: Props) {
         align={"center"}
         justify={"center"}
         p={"40px"}
-        backgroundColor={"rgba(0,0,0,.2)"}
+        backgroundColor={"rgba(0,0,0,.15)"}
         borderRadius={"40px"}
       >
         <Center w={{ base: "97vw", lg: "auto" }}>
