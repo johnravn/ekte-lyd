@@ -19,13 +19,15 @@ export default function LogInPage() {
 
   return (
     <>
+      <div className="smlBackground"></div>
+
       <VStack spacing="90px" className="pageContainer" h={"100vh"}>
         <Navbar selectedTag="/LoggInn" />
         <VStack spacing="30px">
           <Text as={"h1"} className="sectionHeader">
             Logg inn
           </Text>
-          <Input w={{ base: "94vw", sm: "320px" }} placeholder="E-post"></Input>
+          <Input w={{ base: "80vw", sm: "320px" }} placeholder="E-post"></Input>
           <InputGroup size="md">
             <Input
               pr="4.5rem"

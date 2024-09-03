@@ -13,6 +13,8 @@ import Film from "../components/Film";
 export default function AboutUsPage() {
   return (
     <>
+      <div className="smlBackground"></div>
+
       <VStack spacing="90px" className="pageContainer">
         <Navbar selectedTag="/OmOss" />
         <VStack spacing={"30px"}>
