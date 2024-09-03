@@ -13,17 +13,17 @@ import logoOnBlack from "../assets/logo/logoOnBlack.svg";
 export default function HomePage() {
   const today = new Date();
   // Date(year, month, day, hour, minute, second)
-  const targetDate = new Date(2024, 8, 3, 23, 59, 0); // Set this to release date
+  const targetDate = new Date(2024, 8, 4, 0, 59, 0); // Set this to release date
   const targetDateCorrect = new Date(targetDate);
   targetDateCorrect.setHours(targetDateCorrect.getHours() + 2);
-  const targetDateCorrectString = targetDateCorrect.toUTCString();
+  const targetDateCorrectString = targetDateCorrect.toUTCString().slice(0, -4);
 
   return (
     <>
       <div className="smlBackground"></div>
-      <VStack spacing="90px" className="pageContainer">
-        {today > targetDate ? (
-          <>
+      {today > targetDate ? (
+        <>
+          <VStack spacing="90px" className="pageContainer">
             <Navbar selectedTag="/" />
             <HeroSection />
             <WhatWeDo />
@@ -33,10 +33,12 @@ export default function HomePage() {
             <ContactForm />
             <ContactInfo />
             <Footer />
-          </>
-        ) : (
+          </VStack>
+        </>
+      ) : (
+        <VStack spacing="90px" className="pageContainer" p={0}>
           <Flex minH={"100vh"} justifyContent={"center"} alignItems={"center"}>
-            <VStack spacing={"60px"} paddingBottom={"100px"}>
+            <VStack spacing={"60px"}>
               <Center w={"100%"} p={"0 12px"}>
                 <Image
                   src={logoOnBlack}
@@ -46,12 +48,14 @@ export default function HomePage() {
                 />
               </Center>
               <Text className="sectionHeader">
-                Website release date: {targetDateCorrectString}
+                Website release date:
+                <br />
+                {targetDateCorrectString}
               </Text>
             </VStack>
           </Flex>
-        )}
-      </VStack>
+        </VStack>
+      )}
     </>
   );
 }
