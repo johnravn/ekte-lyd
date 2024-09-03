@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 
 export default function GetToKnowUs() {
   const handleScrollToTop = () => {
-    const rootDiv = document.getElementById("root");
+    // const rootDiv = document.getElementById("body");
+    const rootDiv = document.body;
     if (rootDiv) {
       rootDiv.scrollTo({
         top: 0,

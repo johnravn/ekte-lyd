@@ -13,27 +13,6 @@
   }
 }
 
-/* #root {
-  color-scheme: dark;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  height: 100vh;
-  background-image: radial-gradient(
-      circle at 165% 0%,
-      var(--main-color) 0%,
-      transparent 49%
-    ),
-    radial-gradient(circle at -65% 110%, var(--main-color) 0%, transparent 49%);
-  background-attachment: fixed;
-  background-position: center;
-  background-color: var(--main-black);
-  color: var(--main-white);
-  font-family: "Syne", sans-serif;
-  animation: pulse 7s ease-in-out infinite alternate;
-  overflow: scroll;
-} */
-
 #root {
   color-scheme: dark;
   margin: 0 auto;
@@ -54,13 +33,14 @@
   color: var(--main-white);
   font-family: "Syne", sans-serif;
   animation: pulse 7s ease-in-out infinite alternate;
+  overflow: hidden;
 }
 
 html,
 body {
   height: 100%;
   margin: 0;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow-x: hidden;
 }
 
 nav ul {
@@ -136,7 +116,7 @@ nav li:hover {
 }
 
 .pageContainer {
-  max-width: 1920px;
+  width: 1800px;
   padding: 10px 0;
   margin: 0 auto;
   background-image: radial-gradient(
@@ -151,6 +131,11 @@ nav li:hover {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 1800px) {
+  .pageContainer {
+    width: 100vw;
+  }
+}
 @media only screen and (max-width: 1040px) {
   #videoLoop {
     margin-top: 0px;
