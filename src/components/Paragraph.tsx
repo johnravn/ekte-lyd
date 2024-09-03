@@ -14,7 +14,7 @@ export default function Paragraph({ title, text }: Props) {
             {title}
           </Text>
         ) : null}
-        <Text className="paragraph" w={{ base: "92vw", xl: "1000px" }}>
+        <Text className="paragraph" w={{ base: "90vw", xl: "1000px" }}>
           {text}
         </Text>
       </VStack>
