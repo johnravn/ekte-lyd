@@ -22,14 +22,14 @@ export default function Reviews() {
       title: "Daglig leder",
       company: "Applaus! film&tv",
       image: haraldPortrett,
-      text: "Applaus! film&tv leverer streaming- og eventtjenester og har valgt Ekte Lyd som en fast og foretrukket leverandør av lydteknikk. Medarbeiderne i Ekte Lyd er alltid klar til å yte det lille ekstra når det koker på et arrangement, de er strukturerte, pålitelige og er dyktige fagfolk. Kort fortalt er det en stor trygghet å vite at de skal være med på jobb!",
+      text: "Applaus! film&tv leverer streaming- og eventtjenester og har valgt ekte lyd som en fast og foretrukket leverandør av lydteknikk. Medarbeiderne i ekte lyd er alltid klar til å yte det lille ekstra når det koker på et arrangement, de er strukturerte, pålitelige og er dyktige fagfolk. Kort fortalt er det en stor trygghet å vite at de skal være med på jobb!",
     },
     {
       name: "Ole Fredrik Norbye",
       title: "Programansvarlig Master i utøvende musikk",
       company: "NLA Høgskolen",
       image: oleFredrikPortrett,
-      text: "Ekte Lyd har levert lyd til både eksamener og  annen undervisning hos oss. De er alltid godt forberedt, alltid i godt humør og lyden låter nydelig! I tillegg er de svært fleksible og løsningsorienterte på endringer som måtte oppstå på kort varsel. Med Ekte Lyd som teknisk ansvarlige har vi alltid lave skuldre og jeg kan gi dem mine beste anbefalinger.",
+      text: "Ekte lyd har levert lyd til både eksamener og  annen undervisning hos oss. De er alltid godt forberedt, alltid i godt humør og lyden låter nydelig! I tillegg er de svært fleksible og løsningsorienterte på endringer som måtte oppstå på kort varsel. Med ekte lyd som teknisk ansvarlige har vi alltid lave skuldre og jeg kan gi dem mine beste anbefalinger.",
     },
   ];
 
