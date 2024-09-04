@@ -6,7 +6,7 @@ import poster from "../assets/images/videoPoster.jpeg";
 export default function HeroSection() {
   return (
     <>
-      <Center w={"100%"} p={"0 12px"}>
+      <Center w={"100%"} p={"0 20px"}>
         <Image
           src={logoOnBlack}
           w={"360px"}
