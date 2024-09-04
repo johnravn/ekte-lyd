@@ -8,6 +8,7 @@ interface Props {
 }
 
 export default function ReviewProfile({ name, title, company, image }: Props) {
+  const altTxt = "Portrerttbilde av " + name;
   return (
     <>
       <VStack spacing={"12px"}>
@@ -24,6 +25,7 @@ export default function ReviewProfile({ name, title, company, image }: Props) {
             height={"110%"}
             width={"110%"}
             objectFit={"cover"}
+            alt={altTxt}
           />
         </Box>
         <Text

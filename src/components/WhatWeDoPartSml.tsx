@@ -5,6 +5,7 @@ interface Props {
   underTitle: string;
   imageSml: string;
   flip: number;
+  altTxt: string;
 }
 
 export default function WhatWeDoPartSml({
@@ -12,6 +13,7 @@ export default function WhatWeDoPartSml({
   underTitle,
   imageSml,
   flip,
+  altTxt,
 }: Props) {
   const responsiveFontSize = { base: "40px", sm: "45px" };
 
@@ -53,7 +55,7 @@ export default function WhatWeDoPartSml({
         )}
         <Spacer />
         <Box h={"397px"} overflow={"hidden"}>
-          <Image src={imageSml} h={"397px"} objectFit={"cover"} />
+          <Image src={imageSml} h={"397px"} objectFit={"cover"} alt={altTxt} />
         </Box>
       </VStack>
     </>

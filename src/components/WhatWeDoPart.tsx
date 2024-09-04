@@ -5,6 +5,7 @@ interface Props {
   underTitle: string;
   image: string;
   flip: number;
+  altTxt: string;
 }
 
 export default function WhatWeDoPart({
@@ -12,6 +13,7 @@ export default function WhatWeDoPart({
   underTitle,
   image,
   flip,
+  altTxt,
 }: Props) {
   return (
     <>
@@ -38,11 +40,11 @@ export default function WhatWeDoPart({
               </Text>
             </VStack>
             <Spacer />
-            <Image src={image} h={"367px"} />
+            <Image src={image} h={"367px"} alt={altTxt} />
           </>
         ) : (
           <>
-            <Image src={image} h={"367px"} />
+            <Image src={image} h={"367px"} alt={altTxt} />
             <Spacer />
             <VStack spacing={"10px"} align={"end"}>
               <Text

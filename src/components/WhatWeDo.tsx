@@ -16,6 +16,7 @@ interface wwwData {
   image: string;
   imageSml: string;
   flip: number;
+  altTxt: string;
 }
 
 export default function WhatWeDo() {
@@ -28,6 +29,7 @@ export default function WhatWeDo() {
       image: prodImage,
       imageSml: prodImageSml,
       flip: 0,
+      altTxt: "Miksebord på konsert med masse fargelys",
     },
     {
       title: "Utstyr",
@@ -35,6 +37,7 @@ export default function WhatWeDo() {
       image: eqImage,
       imageSml: eqImageSml,
       flip: 1,
+      altTxt: "Nærbilde av mikrofon på flight-kasse i rosa belysning",
     },
     {
       title: "Mannskap",
@@ -42,6 +45,7 @@ export default function WhatWeDo() {
       image: personelImage,
       imageSml: personelImageSml,
       flip: 0,
+      altTxt: "Ekte lyd tekniker i polo med logoen til firmaet på brystet",
     },
   ];
 
@@ -62,6 +66,7 @@ export default function WhatWeDo() {
                   underTitle={section.underTitle}
                   image={section.image}
                   flip={section.flip}
+                  altTxt={section.altTxt}
                 />
               );
             } else {
@@ -71,6 +76,7 @@ export default function WhatWeDo() {
                   underTitle={section.underTitle}
                   imageSml={section.imageSml}
                   flip={section.flip}
+                  altTxt={section.altTxt}
                 />
               );
             }
