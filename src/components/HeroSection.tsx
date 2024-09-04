@@ -13,6 +13,7 @@ export default function HeroSection() {
           // margin={"0 20px"}
           alt="Ekte Lyd Logo"
         />
+        <h1 className="hide">Ekte Lyd</h1>
       </Center>
       <Box
         w={{ base: "100vw", "2xl": "1600px" }}

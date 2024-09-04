@@ -128,6 +128,10 @@ nav li:hover {
   height: 315px;
 }
 
+.hide {
+  display: none;
+}
+
 @media only screen and (min-width: 1800px) {
   #root {
     background-image: radial-gradient(
