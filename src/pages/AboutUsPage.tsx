@@ -5,8 +5,9 @@ import Presentation from "../components/AboutUsSections/Presentation";
 import Values from "../components/AboutUsSections/Values";
 import ContactInfo from "../components/ContactInfo";
 
-import havardPortrait from "../assets/images/UseThisHavard-bakgrunn fjernet.png";
-import johnPortrait from "../assets/images/UseThisJohn-bakgrunn fjernet.png";
+import havardPortrait from "../assets/images/UsableResHåvard.png";
+import johnPortrait from "../assets/images/UsableResJohn.png";
+import martinPortrait from "../assets/images/UsableResMartin.png";
 import Paragraph from "../components/Paragraph";
 import Film from "../components/Film";
 
@@ -36,6 +37,12 @@ export default function AboutUsPage() {
           phone="+47 957 21 220"
           mail="john@ektelyd.no"
           image={johnPortrait}
+        />
+        <Presentation
+          name="Martin Fuglestad"
+          phone="+47 475 23 454"
+          mail="martin@ektelyd.no"
+          image={martinPortrait}
         />
         <Values />
         <Film />
