@@ -22,7 +22,7 @@ export default function Reviews() {
       title: "Daglig leder",
       company: "Applaus! film&tv",
       image: haraldPortrett,
-      text: "Applaus! film&tv leverer streaming- og eventtjenester og har valgt ekte lyd som en fast og foretrukket leverandør av lydteknikk. Medarbeiderne i ekte lyd er alltid klar til å yte det lille ekstra når det koker på et arrangement, de er strukturerte, pålitelige og er dyktige fagfolk. Kort fortalt er det en stor trygghet å vite at de skal være med på jobb!",
+      text: "Vi i Applaus! film&tv leverer streaming- og eventtjenester og har valgt ekte lyd som en fast og foretrukket leverandør av lydteknikk. Medarbeiderne i ekte lyd er alltid klar til å yte det lille ekstra når det koker på et arrangement, de er strukturerte, pålitelige og er dyktige fagfolk. Kort fortalt er det en stor trygghet å vite at de skal være med på jobb!",
     },
     {
       name: "Ole Fredrik Norbye",
@@ -47,7 +47,7 @@ export default function Reviews() {
             <HStack spacing={"42px"} align={"start"}>
               <Text
                 fontFamily={"'Roboto', monospace"}
-                fontSize={"26px"}
+                fontSize={"24px"}
                 align={"left"}
               >
                 {reviewData[0].text}
@@ -60,7 +60,7 @@ export default function Reviews() {
               <Image src={quoteIcon} />
               <Text
                 fontFamily={"'Roboto', sans-serif"}
-                fontSize={"26px"}
+                fontSize={"24px"}
                 align={"left"}
               >
                 {reviewData[1].text}

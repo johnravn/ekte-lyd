@@ -11,9 +11,9 @@ interface Props {
 
 export default function Navbar({ selectedTag }: Props) {
   const pages: PageLiObject[] = [
-    { tag: "/OmOss", name: "Om oss" },
     { tag: "/", name: "Hjem" },
-    { tag: "/LoggInn", name: "Logg inn" },
+    { tag: "/OmOss", name: "Om oss" },
+    // { tag: "/LoggInn", name: "Logg inn" },
   ];
 
   return (
