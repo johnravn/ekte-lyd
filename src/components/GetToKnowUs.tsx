@@ -22,7 +22,7 @@ export default function GetToKnowUs() {
         </Center>
         <Text
           fontFamily={'"Roboto", sans-serif'}
-          fontSize={"32px"}
+          fontSize={"30px"}
           lineHeight={"28px"}
           fontWeight={"light"}
           p={"0 8px"}

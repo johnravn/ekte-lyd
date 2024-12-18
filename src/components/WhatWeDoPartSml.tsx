@@ -25,13 +25,13 @@ export default function WhatWeDoPartSml({
             <VStack spacing={"10px"} align={"start"} p={"20px"} w={"100%"}>
               <Text
                 fontSize={responsiveFontSize}
-                fontWeight={"bold"}
+                // fontWeight={"bold"}
                 lineHeight={"70px"}
                 as={"h3"}
               >
                 {title}
               </Text>
-              <Text fontSize={"22px"} lineHeight={"29px"} align={"start"}>
+              <Text fontSize={"20px"} lineHeight={"29px"} align={"start"}>
                 {underTitle}
               </Text>
             </VStack>
@@ -41,13 +41,13 @@ export default function WhatWeDoPartSml({
             <VStack spacing={"10px"} align={"end"} p={"20px"} w={"100%"}>
               <Text
                 fontSize={responsiveFontSize}
-                fontWeight={"bold"}
+                // fontWeight={"bold"}
                 lineHeight={"70px"}
                 as={"h3"}
               >
                 {title}
               </Text>
-              <Text fontSize={"22px"} lineHeight={"29px"} align={"end"}>
+              <Text fontSize={"20px"} lineHeight={"29px"} align={"end"}>
                 {underTitle}
               </Text>
             </VStack>

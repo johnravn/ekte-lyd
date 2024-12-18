@@ -46,21 +46,23 @@ export default function Reviews() {
             />
             <HStack spacing={"42px"} align={"start"}>
               <Text
-                fontFamily={"'Roboto', monospace"}
+                fontFamily={"'Roboto', sans-serif"}
                 fontSize={"24px"}
+                fontWeight={"light"}
                 align={"left"}
               >
                 {reviewData[0].text}
               </Text>
-              <Image src={quoteIcon} />
+              <Image src={quoteIcon} h={"56px"} />
             </HStack>
           </HStack>
           <HStack spacing={"42px"}>
             <HStack spacing={"42px"} align={"start"}>
-              <Image src={quoteIcon} />
+              <Image src={quoteIcon} h={"56px"} />
               <Text
                 fontFamily={"'Roboto', sans-serif"}
                 fontSize={"24px"}
+                fontWeight={"light"}
                 align={"left"}
               >
                 {reviewData[1].text}
@@ -89,7 +91,6 @@ export default function Reviews() {
             <Text
               fontFamily={"'Roboto', sans-serif"}
               fontSize={"23px"}
-              fontWeight={"500"}
               align={"left"}
             >
               {reviewData[0].text}
@@ -108,7 +109,6 @@ export default function Reviews() {
             <Text
               fontFamily={"'Roboto', sans-serif"}
               fontSize={"23px"}
-              fontWeight={"500"}
               align={"left"}
             >
               {reviewData[1].text}
