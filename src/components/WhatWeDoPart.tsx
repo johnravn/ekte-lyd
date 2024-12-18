@@ -29,7 +29,7 @@ export default function WhatWeDoPart({
             <VStack spacing={"10px"} align={"start"}>
               <Text
                 fontSize={"50px"}
-                fontWeight={"bold"}
+                // fontWeight={"bold"}
                 lineHeight={"70px"}
                 as={"h3"}
               >
@@ -49,7 +49,7 @@ export default function WhatWeDoPart({
             <VStack spacing={"10px"} align={"end"}>
               <Text
                 fontSize={"50px"}
-                fontWeight={"bold"}
+                // fontWeight={"bold"}
                 lineHeight={"70px"}
                 as={"h3"}
               >

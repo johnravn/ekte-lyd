@@ -54,7 +54,7 @@ export default function WhatWeDo() {
       <VStack
         spacing={"55px"}
         w={"100%"}
-        maxW={"1600px"}
+        maxW={"1400px"}
         justifyContent={"center"}
       >
         {wwwData.map((section) => {

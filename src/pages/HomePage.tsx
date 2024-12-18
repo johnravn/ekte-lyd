@@ -21,7 +21,7 @@ export default function HomePage() {
     <>
       <div className="smlBackground"></div>
       <>
-        <VStack spacing="90px" className="pageContainer">
+        <VStack spacing="85px" className="pageContainer">
           <Navbar selectedTag="/" />
           <HeroSection />
           <WhatWeDo />

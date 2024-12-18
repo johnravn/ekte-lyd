@@ -1,4 +1,4 @@
-import { Box, Center, Image } from "@chakra-ui/react";
+import { Box, Center, Image, Text, VStack } from "@chakra-ui/react";
 import logoOnBlack from "../assets/logo/logoOnBlack.svg";
 import videoLoop from "../assets/videos/ektelyd_website_hero_loop_720p.mp4";
 import poster from "../assets/images/videoPoster.jpeg";
@@ -6,15 +6,27 @@ import poster from "../assets/images/videoPoster.jpeg";
 export default function HeroSection() {
   return (
     <>
-      <Center w={"100%"} p={"0 20px"}>
-        <Image
-          src={logoOnBlack}
-          w={"360px"}
-          // margin={"0 20px"}
-          alt="Ekte Lyd Logo"
-        />
-        <h1 className="hide">Ekte Lyd</h1>
-      </Center>
+      <VStack spacing={"20px"}>
+        <Center w={"100%"} p={"0 20px"}>
+          <Image
+            src={logoOnBlack}
+            w={"360px"}
+            // margin={"0 20px"}
+            alt="Ekte Lyd Logo"
+          />
+          <h1 className="hide">Ekte Lyd</h1>
+        </Center>
+        <Center w={"100%"} p={"0 20px"}>
+          <Text
+            fontFamily={"'Roboto', sans-serif"}
+            fontSize={"26px"}
+            fontWeight={300}
+            fontStyle={"italic"}
+          >
+            Leverandør av utstyr og teknikere til konsert, event & konferanse
+          </Text>
+        </Center>
+      </VStack>
       <Box
         w={{ base: "100vw", "2xl": "1600px" }}
         h={{ base: "200px", sm: "300px", xl: "450px" }}

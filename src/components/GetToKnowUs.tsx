@@ -21,10 +21,10 @@ export default function GetToKnowUs() {
           <Image src={logoOnBlack} w={"360px"} alt="Ekte Lyd Logo" />
         </Center>
         <Text
-          fontFamily={'"Anonymous Pro", monospace'}
-          fontSize={"28px"}
+          fontFamily={'"Roboto", sans-serif'}
+          fontSize={"32px"}
           lineHeight={"28px"}
-          fontWeight={"bold"}
+          fontWeight={"light"}
           p={"0 8px"}
         >
           Hvem er vi? Hvordan ble vi til? Les mer om oss her!
