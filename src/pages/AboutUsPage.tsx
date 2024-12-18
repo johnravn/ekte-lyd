@@ -20,7 +20,7 @@ export default function AboutUsPage() {
         <Navbar selectedTag="/OmOss" />
         <VStack spacing={"30px"}>
           <Paragraph
-            title="Hvem er ekte lyd?"
+            title="Vår historie"
             text="Lidenskapen for lyd har vokst seg stor hos oss og er sterkt påvirket av musikalsk bakgrunn. Siden 2021 har vi jobbet som frilans lydteknikere i Oslo. Vi er gode kompiser i tillegg til kollegaer og  valgte derfor i 2023 å starte vårt eget firma sammen, ekte lyd."
           />
           <Paragraph text="Vi jobber for å levere produksjoner av høy kvalitet, samtidig som vi ønsker å være fleksible overfor kundens behov. Ikke minst ønsker vi å ha integritet, altså at vi er oppriktige folk, har ryddig kommunikasjon og at kundens suksess alltid er det viktigste." />

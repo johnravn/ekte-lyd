@@ -21,10 +21,13 @@ export default function Navbar({ selectedTag }: Props) {
     <>
       <nav
         style={{
-          position: "fixed", // Makes the navbar sticky
-          top: 0, // Sticks it to the top of the viewport
+          position: "fixed",
+          top: 0,
           zIndex: 1000,
-          padding: "10px 20px", // Add some padding for better appearance
+          padding: "10px 20px",
+          // backgroundColor: "rgba(40,40,40,.15)",
+          // borderBottomLeftRadius: "20px",
+          // borderBottomRightRadius: "20px",
         }}
       >
         <ul>

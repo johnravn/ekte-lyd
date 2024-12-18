@@ -32,21 +32,22 @@ export default function Presentation({ name, phone, mail, image }: Props) {
         flexFlow={"row-wrap"}
         align={"center"}
         justify={"center"}
-        p={"40px"}
+        paddingX={"60px"}
+        paddingY={"20px"}
         backgroundColor={"rgba(0,0,0,.15)"}
         borderRadius={"40px"}
       >
         <Center w={{ base: "97vw", lg: "auto" }}>
-          <VStack spacing={"56px"}>
-            <Text className="sectionHeader" as={"h3"}>
+          <VStack spacing={"40px"}>
+            <Text className="sectionH3" as={"h3"}>
               {name}
             </Text>
             <VStack spacing={"30px"}>
               <HStack spacing={"20px"}>
-                <Image src={phoneIcon} h={{ base: "45px", sm: "55px" }} />
+                <Image src={phoneIcon} h={{ base: "45px", sm: "40px" }} />
                 <Link
-                  fontFamily={"'IBM Plex Mono', sans-serif"}
-                  fontWeight={500}
+                  fontFamily={"'Roboto', sans-serif"}
+                  fontWeight={400}
                   fontStyle={"normal"}
                   fontSize={responsiveFontSize}
                   href={telLink}
@@ -55,10 +56,10 @@ export default function Presentation({ name, phone, mail, image }: Props) {
                 </Link>
               </HStack>
               <HStack spacing={"20px"}>
-                <Image src={emailIcon} h={{ base: "35px", sm: "40px" }} />
+                <Image src={emailIcon} h={{ base: "35px", sm: "28px" }} />
                 <Link
-                  fontFamily={"'IBM Plex Mono', sans-serif"}
-                  fontWeight={500}
+                  fontFamily={"'Roboto', sans-serif"}
+                  fontWeight={400}
                   fontStyle={"normal"}
                   fontSize={responsiveFontSize}
                   href={mailLink}
