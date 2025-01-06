@@ -4,7 +4,7 @@ import logoWhite from "../assets/logo/logoWhite.svg";
 export default function Footer() {
   return (
     <>
-      <Center w={"100%"} p={"0 12px"}>
+      <Center w={"100%"} p={"12px 0 40px 0"}>
         <Image src={logoWhite} w={"360px"} alt="Ekte Lyd Logo" />
       </Center>
     </>
