@@ -14,8 +14,16 @@ export default function Navbar({ selectedTag }: Props) {
   const pages: PageLiObject[] = [
     { tag: "/", name: "Hjem" },
     { tag: "/OmOss", name: "Om oss" },
-    // { tag: "/LoggInn", name: "Logg inn" },
   ];
+  const handleScrollToTop = () => {
+    // const rootDiv = document.getElementById("body");
+    const rootDiv = document.body;
+    if (rootDiv) {
+      rootDiv.scrollTo({
+        top: 0,
+      });
+    }
+  };
 
   return (
     <>
@@ -25,9 +33,6 @@ export default function Navbar({ selectedTag }: Props) {
           top: 0,
           zIndex: 1000,
           padding: "10px 20px",
-          // backgroundColor: "rgba(40,40,40,.15)",
-          // borderBottomLeftRadius: "20px",
-          // borderBottomRightRadius: "20px",
         }}
       >
         <ul>
@@ -39,8 +44,8 @@ export default function Navbar({ selectedTag }: Props) {
               selectedClass = "";
             }
             return (
-              <li className={selectedClass}>
-                <Link to={page.tag}>{page.name}</Link>
+              <li className={selectedClass} onClick={handleScrollToTop}>
+                <Link to={page.tag}>{page.name} </Link>
               </li>
             );
           })}

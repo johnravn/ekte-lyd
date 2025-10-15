@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar";
 // import Partners from "../components/Partners";
 import Reviews from "../components/Reviews";
 import WhatWeDo from "../components/WhatWeDo";
+import ToTerms from "../components/ToTerms";
 
 export default function HomePage() {
   // const today = new Date();
@@ -30,6 +31,7 @@ export default function HomePage() {
           <GetToKnowUs />
           <ContactForm />
           <ContactInfo />
+          <ToTerms />
           <Footer />
         </VStack>
       </>
