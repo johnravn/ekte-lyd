@@ -5,9 +5,9 @@ import Presentation from "../components/AboutUsSections/Presentation";
 import Values from "../components/AboutUsSections/Values";
 import ContactInfo from "../components/ContactInfo";
 
-import havardPortrait from "../assets/images/UsableResHåvard.png";
-import johnPortrait from "../assets/images/UsableResJohn.png";
-import martinPortrait from "../assets/images/UsableResMartin.png";
+import havardPortrait from "../assets/images/havardPortrait.png";
+import johnPortrait from "../assets/images/johnPortrait.png";
+import martinPortrait from "../assets/images/martinPortrait.png";
 import Paragraph from "../components/Paragraph";
 import Film from "../components/Film";
 

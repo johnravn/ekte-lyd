@@ -5,9 +5,11 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import prodImage from "../assets/images/prod.png";
 import eqImage from "../assets/images/eq.png";
 import personelImage from "../assets/images/personel.png";
+import streamingImage from "../assets/images/stream.png";
 import prodImageSml from "../assets/images/prodSml.png";
 import eqImageSml from "../assets/images/eqSml.png";
 import personelImageSml from "../assets/images/personelSml.png";
+import streamingImageSml from "../assets/images/streamSml.png";
 import WhatWeDoPartSml from "./WhatWeDoPartSml";
 
 interface wwwData {
@@ -32,20 +34,28 @@ export default function WhatWeDo() {
       altTxt: "Miksebord på konsert med masse fargelys",
     },
     {
+      title: "Streaming",
+      underTitle: "Vi leverer streaming av høy kvalitet",
+      image: streamingImage,
+      imageSml: streamingImageSml,
+      flip: 1,
+      altTxt: "Streaming av konferanse",
+    },
+    {
+      title: "Crew",
+      underTitle: "Vi har dyktige teknikere som kan fagfeltet sitt",
+      image: personelImage,
+      imageSml: personelImageSml,
+      flip: 0,
+      altTxt: "Ekte lyd tekniker i polo med logoen til firmaet på brystet",
+    },
+    {
       title: "Utstyr",
       underTitle: "Vi har utstyr av topp kvalitet som vi stoler på",
       image: eqImage,
       imageSml: eqImageSml,
       flip: 1,
       altTxt: "Nærbilde av mikrofon på flight-kasse i rosa belysning",
-    },
-    {
-      title: "Mannskap",
-      underTitle: "Vi har dyktige teknikere som kan fagfeltet sitt",
-      image: personelImage,
-      imageSml: personelImageSml,
-      flip: 0,
-      altTxt: "Ekte lyd tekniker i polo med logoen til firmaet på brystet",
     },
   ];
 

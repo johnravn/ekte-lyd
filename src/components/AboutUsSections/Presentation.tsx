@@ -72,7 +72,13 @@ export default function Presentation({ name, phone, mail, image }: Props) {
         </Center>
         <Spacer />
         <Center w={{ base: "100vw", lg: "auto" }}>
-          <Image src={image} alt={altText}></Image>
+          <Image
+            src={image}
+            alt={altText}
+            h="280px"
+            w="280px"
+            objectFit="cover"
+          />
         </Center>
       </Wrap>
     </>
